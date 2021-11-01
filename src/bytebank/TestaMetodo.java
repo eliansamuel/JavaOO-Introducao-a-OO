@@ -5,18 +5,16 @@ public class TestaMetodo {
 		
 		Conta conta1 = new Conta();
 		
-		conta1.saldo = 100;
-		conta1.depositar(50);
+		// conta1.saldo = 100;  --> não podemos acessar os atributos diretamente.
+		// conta1.depositar(50);  --> não podemos acessar os atributos diretamente.
 		
-		System.out.println("O saldo atual da Conta1: R$ " + conta1.saldo);
-		
-		boolean conseguiuRetirar = conta1.saca(20); /// com isso irá mostrar o retorno do método
-		
+		// System.out.println("O saldo atual da Conta1: R$ " + conta1.saldo);  --> não podemos acessar os atributos diretamente.
+	
 		// se não quisesse o retorno do método, mas sim só o resultado só usar:
 		// conta1.saldo(20);
 		
-		System.out.println("O saldo atual da Conta1: R$ " + conta1.saldo);
-		System.out.println(conseguiuRetirar);
+		// System.out.println("O saldo atual da Conta1: R$ " + conta1.saldo);  --> não podemos acessar os atributos diretamente.
+		// System.out.println(conseguiuRetirar);  --> não podemos acessar os atributos diretamente.
 		
 		Conta conta2 = new Conta();
 		conta2.depositar(1000);
@@ -27,10 +25,10 @@ public class TestaMetodo {
 			System.out.println("Saldo insuficiente!");
 		}
 		
-		System.out.println(conta2.saldo);
-		System.out.println(conta1.saldo);
+		// System.out.println(conta2.saldo);  --> não podemos acessar os atributos diretamente.
+		// System.out.println(conta1.saldo);  --> não podemos acessar os atributos diretamente.
 		
-		conta1.titular = "paulo silveira";
+		// conta1.titular = "paulo silveira"; --> não podemos acessar os atributos diretamente.
 		System.out.println(conta1.titular);
 	}
 }

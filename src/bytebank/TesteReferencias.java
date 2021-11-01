@@ -5,16 +5,16 @@ public class TesteReferencias {
 	public static void main(String[] args) {
 		
 		Conta primeiraConta = new Conta();
-		primeiraConta.saldo = 300;
-		System.out.println("Saldo da primeira conta: " + primeiraConta.saldo);
+		// primeiraConta.saldo = 300;  --> não podemos acessar os atributos diretamente.--> não podemos acessar os atributos diretamente.
+		// System.out.println("Saldo da primeira conta: " + primeiraConta.saldo); --> não podemos acessar os atributos diretamente.
 		
 		Conta segundaConta = primeiraConta;
-		System.out.println("Saldo da segunda conta: " + segundaConta.saldo);
+		// System.out.println("Saldo da segunda conta: " + segundaConta.saldo); --> não podemos acessar os atributos diretamente.
 		
-		segundaConta.saldo += 100;
-		System.out.println("Saldo da segunda conta: " + segundaConta.saldo);
+		// segundaConta.saldo += 100; --> não podemos acessar os atributos diretamente.
+		// System.out.println("Saldo da segunda conta: " + segundaConta.saldo); --> não podemos acessar os atributos diretamente.
 		
-		System.out.println("Saldo da primeira conta: " + primeiraConta.saldo);
+		// System.out.println("Saldo da primeira conta: " + primeiraConta.saldo); --> não podemos acessar os atributos diretamente.
 		
 		if (primeiraConta == segundaConta) {
 			System.out.println("São a mesmissima conta, isso acontece pq a primeiraConta\n"
