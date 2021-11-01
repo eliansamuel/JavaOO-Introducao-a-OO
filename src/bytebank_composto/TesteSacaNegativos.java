@@ -1,4 +1,4 @@
-package bytebank;
+package bytebank_composto;
 
 public class TesteSacaNegativos {
 	
